@@ -1,0 +1,75 @@
+   5 git status
+   6 git add .
+   7 git status
+   8 git commit -m "Index Page "
+   9 git log
+  10 git show 921b0f54
+
+  13 git remote add origin https://github.com/Msocial123/Oracle-Training-Retail.git
+  14 git remote -v
+  15 git pull
+  16 git pull origin main
+  17 git push -u origin main
+  18 git pull origin main
+  19 git pull
+  20 git log
+  21 git remote -v
+  22 clear
+  23 git pull --rebase origin main
+  24 git push -u origin main
+    21 git remote -v
+  22 clear
+  23 git pull --rebase origin main
+  24 git push -u origin main
+  25 history
+  26 git add .;git commit -m "Committed";git push origin main;
+  27 git branch
+  28 git branch services
+  29 git branch
+  30 git checkout services
+  31 git log
+  32 git status
+  33 git add .
+  34 git coomit -m "Service html Page created"
+  35 git checkout main
+  36 git checkout services
+  37 git commit -m "Created Service html page"
+  38 git log --oneline
+  39 git checkout main
+  40 git log --oneline
+  41 git branch Test
+  42 git branch
+  43 git checkout Test
+  44 git log --oneline
+  45 git branch
+  46 git checkout services
+  47 git push origin services
+  48 git history
+  49 history
+  50 git push origin Test
+  51 git pull
+  52 git main
+  53 git checkout main
+  54 git pull origin main
+  55 clear
+  56 git branch
+  57 git add .;git commit -m "Changes are committed"
+  58 git checkout services
+  59 git add .;git commit -m "Changes are committed"
+  60 git checkout main
+  61 git merge services
+  62 git add . ; git commit -m "Merge Completed"
+  62 git add . ; git commit -m "Merge Completed"
+  63 history
+  64 git branch
+  65 git rebase Test
+  66 git add .
+  67 git commit -m "Committed "
+  68 git rebase --continue
+  69 git checkout services
+  70 git log --oneline
+  71 git checkout main
+  72 git rebase services
+  73 git add .
+  74 git commit -m "Commit "
+  75 git rebase --continue

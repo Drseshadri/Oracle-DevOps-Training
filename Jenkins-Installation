@@ -1,0 +1,34 @@
+ 1  yum update -y
+    2  sudo wget -O /etc/yum.repos.d/jenkins.repo     https://pkg.jenkins.io/redhat-stable/jenkins.repo
+    3  sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io-2023.key
+    4  rm -rf /etc/yum.repos.d/jenkins.repo
+    5  clear
+    6  sudo dnf install -y java-17-openjdk
+    7  java -version
+    8  sudo dnf install -y wget
+    9  sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
+   10  sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key
+   11  sudo dnf install -y jenkins
+   12  sudo systemctl enable jenkins
+   13  sudo systemctl start jenkins
+   14  sudo systemctl status jenkins
+   16  sudo netstat -tulnp | grep 8080
+   17  sudo nano /etc/sysconfig/jenkins
+   18  cd /etc/sysconfig
+   19  ls
+   20  sudo firewall-cmd --list-ports
+   21  sudo firewall-cmd --permanent --add-port=8080/tcp
+   22  sudo firewall-cmd --reload
+   23  sudo firewall-cmd --list-ports
+   24  sestatus
+
+   ____________________________________
+   SonarScanner-Installation 
+   wget https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-5.0.1.3006-linux.zip
+   24  unzip sonar-scanner-cli-5.0.1.3006-linux.zip
+   25  sudo mv sonar-scanner-5.0.1.3006-linux /opt/sonar-scanner
+   26  sudo nano /etc/profile - Edit this file add the below line - /opt/sonar-scanner/bin/sonar-scanner
+   27  source /etc/profile
+   28  sonar-scanner -v
+   29  /opt/sonar-scanner/
+   30  cd /opt/sonar-scanner/
